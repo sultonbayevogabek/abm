@@ -1,0 +1,118 @@
+<%- include('parts/header') %>
+<% var contacts %>
+<!--Global-Loader-->
+<div id="global-loader">
+    <img src="/admin/images/icons/loader.svg" alt="loader">
+</div>
+
+<div class="page">
+    <div class="page-main">
+        <!--app-header-->
+        <div class="app-header header hor-topheader d-flex">
+            <div class="container">
+                <div class="d-flex pt-1"
+                     style="justify-content: space-between; align-items: center; padding: 15px 0px;">
+                    <a class="header-brand" href="index.html">
+                        ABM.UZ
+                    </a>
+                    <a class="nav-link leading-none siderbar-link">
+						<span class="mr-3 d-none d-lg-block ">
+							<span class="text-gray-white"><span class="ml-2">Admin</span></span>
+						</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <!--app-header end-->
+
+        <!-- app-content-->
+        <div class="container content-area">
+            <div class="side-app">
+
+                <!-- page-header -->
+                <div class="page-header">
+
+                </div>
+                <!-- End page-header -->
+
+                <div class="row">
+                    <div class="col-12">
+                        <ul>
+
+                            <% if(contacts)  { %>
+                                <li>
+                                    <h1 style="margin-top: 120px;">Murojaatlar - bazasi</h1>
+                                    <ol>
+                                        <li>
+                                            <div class="row mt-5 pt-5">
+                                                <div class="col-lg-12">
+                                                    <div class="e-panel card">
+                                                        <div class="card-header">
+                                                            <h4>Users</h4>
+                                                        </div>
+                                                        <div class="card-body"
+                                                             style="max-height: 400px; overflow: scroll;">
+                                                            <div class="e-table">
+                                                                <div class="table-responsive table-lg">
+                                                                    <table class="table table-bordered">
+                                                                        <thead>
+                                                                        <tr>
+                                                                            <th class="text-center">No</th>
+                                                                            <th class="text-center">Ism</th>                                                                  
+                                                                            <th class="text-center">Telefon</th>
+                                                                            <th class="text-center">Murojaat-vaqti</th>
+                                                                            <th class="text-center">Actions</th>
+                                                                        </tr>
+                                                                        </thead>
+                                                                        <tbody>
+                                                                        <% for(let i = 0; i < contacts.length; i++) { %>
+                                                                            <tr>
+                                                                                <td class="text-center align-middle">
+                                                                                    <%= i %> </td>
+                                                                                <td class="text-center align-middle">
+                                                                                    <%= contacts[i].dataValues.name %>
+                                                                                </td>
+                                                                               
+                                                                                <td class="text-center align-middle">
+                                                                                    <%= contacts[i].dataValues.phone %> </td>
+                                                                                <td class="text-center align-middle">
+                                                                                    <%= contacts[i].dataValues.createdAt %> </td>
+                                                                                
+                                                                                <td class="text-center align-middle">
+                                                                                    <form class="btn-group align-top"
+                                                                                          action="/admin/remove"
+                                                                                          method="POST">
+                                                                                        <input type="hidden"
+                                                                                               value="<%=   contacts[i].dataValues.user_id  %>"
+                                                                                               name="id"/>
+                                                                                        <button
+                                                                                                class="btn btn-sm btn-primary badge"
+                                                                                                type="submit">
+                                                                                            <i class="fa fa-trash"></i>
+                                                                                        </button>
+                                                                                    </form>
+                                                                                </td>
+                                                                            </tr>
+                                                                            <%       }       %>
+                                                                        </tbody>
+                                                                    </table>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                    </ol>
+                                </li>
+                            <% } %>
+                            
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- End main-->
+<%- include('parts/footer') %>

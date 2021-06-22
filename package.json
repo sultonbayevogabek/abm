@@ -1,0 +1,40 @@
+{
+  "name": "ABM_backend",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node src/server.js",
+    "dev": "nodemon src/server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/suhrob-abdivaliyevich-555/ABM.git"
+  },
+  "keywords": [
+    "ABM",
+    "ABM group"
+  ],
+  "author": "Suhrob Abduaxatov",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/suhrob-abdivaliyevich-555/ABM/issues"
+  },
+  "homepage": "https://github.com/suhrob-abdivaliyevich-555/ABM#readme",
+  "dependencies": {
+    "bcrypt": "^5.0.1",
+    "cookie-parser": "^1.4.5",
+    "cors": "^2.8.5",
+    "dotenv": "^10.0.0",
+    "ejs": "^3.1.6",
+    "express": "^4.17.1",
+    "helmet": "^4.6.0",
+    "joi": "^17.4.0",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^5.12.14",
+    "pg": "^8.6.0",
+    "pg-hstore": "^2.3.4",
+    "sequelize": "^6.6.2",
+    "uuid": "^8.3.2"
+  }
+}
