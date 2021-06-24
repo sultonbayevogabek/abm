@@ -145,6 +145,7 @@ document.addEventListener('DOMContentLoaded', () => {
          rowLanguageItems[selectedOptionIndex].classList.add('row-language__item--active')
          languageRender(selectedOptionIndex)
          feedbackListRender()
+         window.location.reload()
       })
    })
 
@@ -197,6 +198,16 @@ document.addEventListener('DOMContentLoaded', () => {
       `
 
       whyWeHeading.textContent = whyWe.h2
+      whyWeCardsWrapper.innerHTML = ''
+      whyWe.list.forEach(item => {
+         whyWeCardsWrapper.innerHTML += `
+         <div class="why-we__card">
+            <img src="img/why-we/star.svg" alt="star icon">
+            <h3>${item.h3}</h3>
+            <p>${item.p}</p>
+         </div>
+         `
+      })
 
       trustedCompaniesHeading.textContent = trustedCompanies.h2
 

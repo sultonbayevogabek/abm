@@ -37,6 +37,28 @@ const data = [
       },
       whyWe: {
          h2: 'Нега айнан биз?',
+         list: [
+            {
+               h3: 'Тажрибали таржимонлар',
+               p: 'Бизнинг барча таржимонларимиз ўз тилларини муккаммал билишади ва бу соҳада катта тажрибага егадир'
+            },
+            {
+               h3: 'Қулай нархлар',
+               p: 'Бизда хизмат ҳаққи сиз ўйлаганингиздан анча арзон!'
+            },
+            {
+               h3: 'Қисқа вақт ичида хизмат кўрсатиш',
+               p: 'Бизда хизмат сифати билан бирга тезликка ҳам алоҳида эътибор қаратилади'
+            },
+            {
+               h3: 'Сифатли таржималар',
+               p: 'Таржима сифатига ва даражасига 100% кафолат берамиз'
+            },
+            {
+               h3: 'Етказиб бериш хизмати',
+               p: 'Тайёр бўлган таржималарни уйингизга етказиб ҳам берамиз'
+            }
+         ]
       },
       trustedCompanies: {
          h2: 'Бизга ишонч билдирган компаниялар',
@@ -133,6 +155,28 @@ const data = [
       },
       whyWe: {
          h2: 'Nega aynan biz?',
+         list: [
+            {
+               h3: 'Tajribali tarjimonlar',
+               p: 'Bizning barcha tarjimonlarimiz o‘z tillarini mukkammal bilishadi va bu sohada katta tajribaga egadir'
+            },
+            {
+               h3: 'Qulay narxlar',
+               p: 'Bizda xizmat haqqi siz o‘ylaganingizdan ancha arzon!'
+            },
+            {
+               h3: 'Qisqa vaqt ichida xizmat ko`rsatish',
+               p: 'Bizda xizmat sifati bilan birga tezlikka ham alohida e`tibor qaratiladi'
+            },
+            {
+               h3: 'Sifatli tarjimalar',
+               p: 'Tarjima sifatiga va darajasiga 100% kafolat beramiz'
+            },
+            {
+               h3: 'Yetkazib berish xizmati',
+               p: 'Tayyor bo‘lgan tarjimalarni uyingizga yetkazib ham beramiz'
+            }
+         ]
       },
       trustedCompanies: {
          h2: 'Bizga ishonch bildirgan kompaniyalar',
@@ -229,6 +273,28 @@ const data = [
       },
       whyWe: {
          h2: 'Почему именно мы?',
+         list: [
+            {
+               h3: 'Опытные переводчики',
+               p: 'Все наши переводчики свободно говорят на своем языке и имеют большой опыт работы в этой области.'
+            },
+            {
+               h3: 'Доступные цены',
+               p: 'Стоимость наших услуг намного дешевле, чем вы думаете!'
+            },
+            {
+               h3: 'Краткосрочное обслуживание',
+               p: 'Особое внимание мы уделяем не только качеству обслуживания, но и скорости'
+            },
+            {
+               h3: 'Качественные переводы',
+               p: 'Гарантируем 100% качество и уровень перевода.'
+            },
+            {
+               h3: 'Служба доставки',
+               p: 'Так же доставим готовые переводы к вам домой.'
+            }
+         ]
       },
       trustedCompanies: {
          h2: 'Компании, которые нам доверяют',
@@ -325,6 +391,28 @@ const data = [
       },
       whyWe: {
          h2: 'Why us?',
+         list: [
+            {
+               h3: 'Experienced translators',
+               p: 'All our translators are fluent in their own language and have extensive experience in this field.'
+            },
+            {
+               h3: 'Affordable prices',
+               p: 'The cost of our services is much cheaper than you think!'
+            },
+            {
+               h3: 'Short term service',
+               p: 'We pay special attention not only to the quality of service, but also to speed.'
+            },
+            {
+               h3: 'Quality translations',
+               p: 'We guarantee 100% quality and level of translation.'
+            },
+            {
+               h3: 'Delivery service',
+               p: 'We will also deliver ready-made translations to your home.'
+            }
+         ]
       },
       trustedCompanies: {
          h2: 'Companies that trust us'

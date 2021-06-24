@@ -363,6 +363,7 @@ button:focus {
 
 .site-intro__left {
    width: 547px;
+   height: 713px;
    padding-top: 147px;
    padding-bottom: 147px;
 }
@@ -525,9 +526,10 @@ button:focus {
 }
 
 .why-we__card h3 {
+   margin-bottom: 20px;
    font-weight: 700;
    font-size: 20px;
-   line-height: 50px;
+   line-height: 25px;
    letter-spacing: 0.02em;
    color: rgba(0, 0, 0, 0.9);
 }
@@ -606,7 +608,7 @@ button:focus {
 
 .feedback .splide {
    position: relative;
-   height: 245px;
+   min-height: 245px;
    padding-top: 40px;
    padding-left: 40px;
    padding-right: 40px;
@@ -983,6 +985,10 @@ button:focus {
 }
 
 @media only screen and (max-width: 1170px) {
+   .trusted-companies .splide__slide a::after {
+      margin-left: 25%;
+   }
+
    .side-header__top {
       padding-top: 3px;
       padding-bottom: 3px;
@@ -1251,6 +1257,7 @@ button:focus {
 
    .site-intro__left {
       width: 100% !important;
+      height: auto;
       padding-bottom: 30px;
       text-align: center;
    }
