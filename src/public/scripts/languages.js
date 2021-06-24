@@ -143,6 +143,8 @@ document.addEventListener('DOMContentLoaded', () => {
          localStorage.setItem('selectedOptionIndex', selectedOptionIndex)
          rowLanguageItems.forEach(item => item.classList.remove('row-language__item--active'))
          rowLanguageItems[selectedOptionIndex].classList.add('row-language__item--active')
+         languageRender(selectedOptionIndex)
+         feedbackListRender()
       })
    })
 
