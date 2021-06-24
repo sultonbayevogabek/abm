@@ -540,18 +540,26 @@ button:focus {
    color: rgba(0, 0, 0, 0.52);
 }
 
-.trusted-companies .splide__slide {
+.trusted-companies .splide__slide a::after {
+   width: 2px;
+   height: 86px;
+   margin-left: 43px;
+   background-color: rgba(96, 86, 86, 0.16);
+   content: ""
+}
+
+.trusted-companies .splide__list {
+   align-items: center;
+}
+
+.trusted-companies .splide__slide a {
    display: flex;
    align-items: center;
    justify-content: center;
 }
 
-.trusted-companies .splide__slide::after {
-   width: 2px;
-   height: 86px;
-   margin-left: 66px;
-   background-color: rgba(96, 86, 86, 0.16);
-   content: ""
+.trusted-companies .splide__slide img {
+   width: 70%;
 }
 
 .splide__arrows {
