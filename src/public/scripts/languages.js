@@ -119,8 +119,7 @@ document.addEventListener('DOMContentLoaded', () => {
       })
 
       addClass(target, 'select__item--active')
-      languageRender(selectedOptionIndex)
-      feedbackListRender()
+      window.location.reload()
    })
 
    window.addEventListener('keydown', e => {
@@ -143,8 +142,6 @@ document.addEventListener('DOMContentLoaded', () => {
          localStorage.setItem('selectedOptionIndex', selectedOptionIndex)
          rowLanguageItems.forEach(item => item.classList.remove('row-language__item--active'))
          rowLanguageItems[selectedOptionIndex].classList.add('row-language__item--active')
-         languageRender(selectedOptionIndex)
-         feedbackListRender()
          window.location.reload()
       })
    })

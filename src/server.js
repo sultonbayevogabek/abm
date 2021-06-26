@@ -23,7 +23,7 @@ async function main() {
 	server.use(express.urlencoded({extended: true}));
 	server.use(cookieParser());
 	server.use(express.static(path.join(__dirname, 'public')));
-	server.use(cors())
+	// server.use(cors())
 	server.use(helmet())
 	server.use(async (req, res, next) => {
         req.postgres = db
