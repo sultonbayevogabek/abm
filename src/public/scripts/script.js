@@ -84,6 +84,6 @@ document.addEventListener('DOMContentLoaded', () => {
     window.addEventListener('load', () => {
         setTimeout(() => {
             loader.classList.add('d-none')
-        }, 1000)
+        }, 500)
     })
 })
