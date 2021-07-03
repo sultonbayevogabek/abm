@@ -78,4 +78,12 @@ document.addEventListener('DOMContentLoaded', () => {
             alertSuccess.remove()
         }, 10000)
     }
+
+    // loader
+    const loader = selectOne('.loader')
+    window.addEventListener('load', () => {
+        setTimeout(() => {
+            loader.classList.add('d-none')
+        }, 1000)
+    })
 })

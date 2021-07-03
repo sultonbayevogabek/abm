@@ -12,10 +12,7 @@ router.get("*", (req, res) => {
 
 router.post('/', async (req, res) => {
 	try {
-		let {
-			name,
-			phone
-		} = req.body
+		let { name, phone } = req.body
 		phone = phone.replace(/[^0-9]+/g, '')
 		const data = await userMessageValidations.validateAsync({
 			name,
@@ -25,12 +22,14 @@ router.post('/', async (req, res) => {
 			name: data.name,
 			phone: data.phone,
 		})
-		res.render('index', {
-			success: 'Successfully sent'
+		res.status(201).json({
+			ok: true,
+			message: 'data sent'
 		})
 	} catch (e) {
-		res.render('index', {
-			error: e + ""
+		res.status(400).json({
+			ok: false,
+			message: e + ''
 		})
 	}
 })

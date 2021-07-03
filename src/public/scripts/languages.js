@@ -120,6 +120,8 @@ document.addEventListener('DOMContentLoaded', () => {
 
       addClass(target, 'select__item--active')
       window.location.reload()
+
+      
    })
 
    window.addEventListener('keydown', e => {

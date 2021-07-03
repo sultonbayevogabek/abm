@@ -115,6 +115,10 @@ const data = [
          name: 'Исмингиз',
          phone: 'Телефон рақамингиз',
          send: 'Жўнатиш'
+      },
+      form: {
+         failed: 'Телефон рақам ёки исм нотўғри кириртилди. Илтимос текшириб қайтадан киритинг.',
+         success: 'Мурожаатингиз учун раҳмат! Сиз билан тез орада боғланамиз.'
       }
    },
    {
@@ -233,6 +237,10 @@ const data = [
          name: 'Ismingiz',
          phone: 'Telefon raqamingiz',
          send: 'Jo`natish'
+      },
+      form: {
+         failed: 'Telefon raqam yoki ism noto`g`ri kiritildi. Iltimos tekshirib qaytadan kiriting.',
+         success: 'Murojaatingiz uchun rahmat! Siz bilan tez orada bog`lanamiz.'
       }
    },
    {
@@ -351,6 +359,10 @@ const data = [
          name: 'Ваше имя',
          phone: 'Ваш номер телефона',
          send: 'Отправка'
+      },
+      form: {
+         failed: 'Номер телефона или имя введены неправильно. Пожалуйста, проверьте и введите заново.',
+         success: 'Спасибо за вашу заявку! Мы свяжемся с вами в ближайшее время.'
       }
    },
    {
@@ -451,6 +463,10 @@ const data = [
          name: 'Your name',
          phone: 'Your phone',
          send: 'Send'
+      },
+      form: {
+         failed: 'The phone number or name was entered incorrectly. Please check and re-enter.',
+         success: 'Thanks for your application! We will contact you shortly.'
       }
    }
 ]

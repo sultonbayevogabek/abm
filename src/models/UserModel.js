@@ -12,7 +12,7 @@ module.exports =  async (Sequelize, sequelize) => {
         phone: {
             type: Sequelize.DataTypes.STRING(32),
             is: /^9989[012345789][0-9]{7}$/,
-            allowNull: false,
+            allowNull: false
         },
     })
 }
