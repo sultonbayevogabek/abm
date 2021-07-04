@@ -72,7 +72,8 @@ document.addEventListener('DOMContentLoaded', () => {
       contactUsHeading = selectOne('.contact-us h3'),
       contactUsNameInput = selectOne('input[name="name"]'),
       contactUsPhoneInput = selectOne('input[name="phone"]'),
-      contactUsSubmit = selectOne('.contact-us__submit')
+      contactUsSubmit = selectOne('.contact-us__submit'),
+      footerContainer = selectOne('.footer .container')
 
    function showSelectList() {
       removeClass(selectList, 'd-none')
@@ -149,7 +150,7 @@ document.addEventListener('DOMContentLoaded', () => {
    })
 
    function languageRender(selectedLanguageIndex) {
-      const {menu, intro, about, services, whyWe, trustedCompanies, feedback, faq, contactUs} = data[selectedLanguageIndex]
+      const {menu, intro, about, services, whyWe, trustedCompanies, feedback, faq, contactUs, footer} = data[selectedLanguageIndex]
 
       for (let i = 0; i < 5; i++) {
          siteNavLinks[i].textContent = menu[i]
@@ -249,5 +250,57 @@ document.addEventListener('DOMContentLoaded', () => {
       contactUsNameInput.setAttribute('placeholder', contactUs.name)
       contactUsPhoneInput.setAttribute('placeholder', contactUs.phone)
       contactUsSubmit.textContent = contactUs.send
+
+      footerContainer.innerHTML = `
+        <div class="footer__col">
+         <h2 class="footer__logo">ABM.UZ</h2>
+         <p class="footer__description">${footer.footerDescription}</p>
+         <p class="footer__copyright">
+             Copyright © 2021 <a href="https://abm.uz">ABM INVEST</a>. Instant - group. All rights reserved.
+         </p>
+     </div>
+        <div class="footer__col">
+            <h2>${footer.cols[0].h2}</h2>
+            <ul class="footer__ul">
+                <li class="footer__li">
+                    <a class="footer__link" href="#services">${footer.cols[0].links[0]}</a>
+                </li>
+                <li class="footer__li">
+                    <a class="footer__link" href="#why-we">${footer.cols[0].links[1]}</a>
+                </li>
+                <li class="footer__li">
+                    <a class="footer__link" href="#services">${footer.cols[0].links[2]}</a>
+                </li>
+                <li class="footer__li footer__li--socials">
+                    <a class="footer__link" href="https://t.me/Farkhod1877">
+                        <img src="/img/icons/telegram.svg" alt="telegram icon">
+                    </a>
+                    <a class="footer__link" href="https://www.facebook.com/abminnovatsiyainvest">
+                        <img src="/img/icons/facebook.svg" alt="facebook icon">
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="footer__col">
+            <h2>${footer.cols[1].h2}</h2>
+            <ul class="footer__ul">
+                <li class="footer__li">
+                    <a class="footer__link" href="tel: +998712007701">+998712007701</a>
+                </li>
+                <li class="footer__li">
+                    <a class="footer__link" href="tel: +998712555012">+998712555012</a>
+                </li>
+                <li class="footer__li">
+                    <a class="footer__link" href="mailto: abmuz@yandex.ru">abmuz@yandex.ru</a>
+                </li>
+            </ul>
+        </div>
+        <div class="footer__col">
+             <h2>${footer.cols[2].h2}</h2>
+            <a href="https://yandex.ru/maps/-/CCUeJIUBoB">
+                <img src="/img/footer/map.png" alt="">
+            </a>
+        </div>
+      `
    }
 })

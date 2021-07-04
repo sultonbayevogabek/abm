@@ -57,6 +57,10 @@ const data = [
             {
                h3: 'Етказиб бериш хизмати',
                p: 'Тайёр бўлган таржималарни уйингизга етказиб ҳам берамиз'
+            },
+            {
+               h3: 'Ишончли',
+               p: 'Ўз лойиҳангиз бажарилиш жараёнини кузатиб боришингиз мумкин. Лойихангиз юқори даражада таржима қилинишига ишонч ҳосил қилинг.'
             }
          ]
       },
@@ -119,6 +123,21 @@ const data = [
       form: {
          failed: 'Телефон рақам ёки исм нотўғри кириртилди. Илтимос текшириб қайтадан киритинг.',
          success: 'Мурожаатингиз учун раҳмат! Сиз билан тез орада боғланамиз.'
+      },
+      footer: {
+         footerDescription: '«ABM INNOVATSIYA INVEST», МЧЖ 2015- йилдан буён таржима хизматлари бозорида фаолият юритиб келмоқда. Биз таклиф этаётган хизматларни юқори малакали таржимонлар олиб боради',
+         cols: [
+            {
+               h2: 'Фойдали линклар',
+               links: ['Сервислар', 'Нега айнан биз?', 'Ҳамкорлар']
+            },
+            {
+               h2: 'Алоқа'
+            },
+            {
+               h2: 'Бизнинг жойлашув'
+            }
+         ]
       }
    },
    {
@@ -179,6 +198,10 @@ const data = [
             {
                h3: 'Yetkazib berish xizmati',
                p: 'Tayyor bo‘lgan tarjimalarni uyingizga yetkazib ham beramiz'
+            },
+            {
+               h3: 'Ishonchli',
+               p: 'O`z loyihangiz bajarilish jarayonini kuzatib borishingiz mumkin. Loyihangiz yuqori darajada tarjima qilinishiga ishonch hozil qilasiz'
             }
          ]
       },
@@ -241,6 +264,21 @@ const data = [
       form: {
          failed: 'Telefon raqam yoki ism noto`g`ri kiritildi. Iltimos tekshirib qaytadan kiriting.',
          success: 'Murojaatingiz uchun rahmat! Siz bilan tez orada bog`lanamiz.'
+      },
+      footer: {
+         footerDescription: '«ABM INNOVATSIYA INVEST», MChJ 2015- yildan buyon tarjima xizmatlari bozorida faoliyat yuritib kelmoqda. Biz taklif etayotgan xizmatlarni yuqori malakali tarjimonlar olib boradi',
+         cols: [
+            {
+               h2: 'Foydali linklar',
+               links: ['Servislar', 'Nega aynan biz?', 'Hamkorlar']
+            },
+            {
+               h2: 'Aloqa'
+            },
+            {
+               h2: 'Bizning joylashuv'
+            }
+         ]
       }
    },
    {
@@ -301,6 +339,10 @@ const data = [
             {
                h3: 'Служба доставки',
                p: 'Так же доставим готовые переводы к вам домой.'
+            },
+            {
+               h3: 'Надежный',
+               p: 'Вы можете следить за прогрессом своего проекта. Вы можете быть уверены, что ваш проект будет переведен на высоком уровне.'
             }
          ]
       },
@@ -363,6 +405,21 @@ const data = [
       form: {
          failed: 'Номер телефона или имя введены неправильно. Пожалуйста, проверьте и введите заново.',
          success: 'Спасибо за вашу заявку! Мы свяжемся с вами в ближайшее время.'
+      },
+      footer: {
+         footerDescription: 'ООО «ABM INNOVATSIYA INVEST» работает на рынке переводческих услуг с 2015 года. Предлагаемые нами услуги предоставляются высококвалифицированными переводчиками.',
+         cols: [
+            {
+               h2: 'Полезные ссылки',
+               links: ['Услуги', 'Почему нас?', 'Партнеры']
+            },
+            {
+               h2: 'Контакти'
+            },
+            {
+               h2: 'Наше место нахождения'
+            }
+         ]
       }
    },
    {
@@ -423,6 +480,10 @@ const data = [
             {
                h3: 'Delivery service',
                p: 'We will also deliver ready-made translations to your home.'
+            },
+            {
+               h3: 'Reliable',
+               p: 'You can follow the progress of your project. You can be sure that your project will be translated at a high level'
             }
          ]
       },
@@ -467,6 +528,21 @@ const data = [
       form: {
          failed: 'The phone number or name was entered incorrectly. Please check and re-enter.',
          success: 'Thanks for your application! We will contact you shortly.'
+      },
+      footer: {
+         footerDescription: '"ABM INNOVATSIYA INVEST" LLC has been operating in the market of translation services since 2015. The services we offer are provided by highly qualified translators',
+         cols: [
+            {
+               h2: 'Useful links',
+               links: ['Services', 'Why us?', 'Partners']
+            },
+            {
+               h2: 'Contacts'
+            },
+            {
+               h2: 'Our location'
+            }
+         ]
       }
    }
 ]
