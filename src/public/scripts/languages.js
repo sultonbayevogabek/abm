@@ -269,7 +269,7 @@ document.addEventListener('DOMContentLoaded', () => {
                     <a class="footer__link" href="#why-we">${footer.cols[0].links[1]}</a>
                 </li>
                 <li class="footer__li">
-                    <a class="footer__link" href="#services">${footer.cols[0].links[2]}</a>
+                    <a class="footer__link" href="#trusted">${footer.cols[0].links[2]}</a>
                 </li>
                 <li class="footer__li footer__li--socials">
                     <a class="footer__link" href="https://t.me/Farkhod1877">
