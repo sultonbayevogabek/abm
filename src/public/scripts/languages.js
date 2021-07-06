@@ -18,15 +18,15 @@ document.addEventListener('DOMContentLoaded', () => {
       perMove: 1,
       pagination: false,
       pauseOnHover: true,
-      autoplay: true,
+      autoplay: false,
       interval: 2000,
       breakpoints: {
          800: {
             perPage: 3,
          },
-         540: {
+         620: {
             perPage: 2,
-         },
+         }
       }
    }).mount();
 
@@ -291,7 +291,13 @@ document.addEventListener('DOMContentLoaded', () => {
                     <a class="footer__link" href="tel: +998712555012">+998712555012</a>
                 </li>
                 <li class="footer__li">
+                    <a class="footer__link" href="tel: +998935292560">+998935292560</a>
+                </li>
+                <li class="footer__li">
                     <a class="footer__link" href="mailto: abmuz@yandex.ru">abmuz@yandex.ru</a>
+                </li>
+                <li class="footer__li">
+                    <a class="footer__link" href="mailto: orderuzb@gmail.com">orderuzb@gmail.com</a>
                 </li>
             </ul>
         </div>

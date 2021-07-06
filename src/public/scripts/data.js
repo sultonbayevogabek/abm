@@ -1,146 +1,5 @@
 const data = [
    {
-      menu: ['Биз ҳақимизда', 'Сервислар', 'Нега айнан биз?', 'Ҳамкорлар', 'Алоқа'],
-      intro: {
-         h1: 'Биз сизнинг фойдангиз учун таржима қиламиз.',
-         p: 'Ҳозирни ўзида бизга ёзма ёки аудио таржима буюртиринг ва  20% чегирмага эга бўлинг',
-         a: 'Буюртма бериш'
-      },
-      about: {
-         h2: 'Биз ҳақимизда',
-         p: '«ABM INNOVATSIYA INVEST», 2015- йилдан буён таржима хизматлари бозорида фаолият юритиб келмоқда. Биз таклиф этаётган хизматлар қаторига юқори малакали ёзма, оғзаки ва кетма-кет ва синхрон таржима, таржима қилинган ҳужжатларни нотариал тасдиқлаш, уларни қонунийлаштириш / апостилизация (Адлия вазирлиги, Ташқи ишлар вазирлиги, элчихоналарида)  тасдиқлаш киради.'
-      },
-      services: {
-         h2: 'Сервислар',
-         cards: [
-            {
-               h3: 'Шахсий ҳужжатлар',
-               p: 'Шахсий ҳужжатларни (паспорт, диплом, аттестат ва х.к.) бир тилдан бошқа тилга таржима қилиш.',
-               a: 'Буюртма бериш'
-            },
-            {
-               h3: 'В2В таржима'
-            },
-            {
-               h3: 'Сайтларни таржима қилиш'
-            },
-            {
-               h3: 'Тезкор таржима'
-            },
-            {
-               h3: 'В2С таржималар',
-            },
-            {
-               h3: 'Хужжатларни тиклаш',
-            }
-         ]
-      },
-      whyWe: {
-         h2: 'Нега айнан биз?',
-         list: [
-            {
-               h3: 'Тажрибали таржимонлар',
-               p: 'Бизнинг барча таржимонларимиз ўз тилларини муккаммал билишади ва бу соҳада катта тажрибага егадир'
-            },
-            {
-               h3: 'Қулай нархлар',
-               p: 'Бизда хизмат ҳаққи сиз ўйлаганингиздан анча арзон!'
-            },
-            {
-               h3: 'Қисқа вақт ичида хизмат кўрсатиш',
-               p: 'Бизда хизмат сифати билан бирга тезликка ҳам алоҳида эътибор қаратилади'
-            },
-            {
-               h3: 'Сифатли таржималар',
-               p: 'Таржима сифатига ва даражасига 100% кафолат берамиз'
-            },
-            {
-               h3: 'Етказиб бериш хизмати',
-               p: 'Тайёр бўлган таржималарни уйингизга етказиб ҳам берамиз'
-            },
-            {
-               h3: 'Ишончли',
-               p: 'Ўз лойиҳангиз бажарилиш жараёнини кузатиб боришингиз мумкин. Лойихангиз юқори даражада таржима қилинишига ишонч ҳосил қилинг.'
-            }
-         ]
-      },
-      trustedCompanies: {
-         h2: 'Бизга ишонч билдирган компаниялар',
-         list: [
-            {
-               logo: 'https://banner2.cleanpng.com/20180502/twq/kisspng-mitsubishi-corporation-company-subsidiary-mitsubis-mitsubishi-motors-5aea28acbb72a3.6889878015252952767678.jpg',
-               webSite: 'https://www.mitsubishicorp.com/'
-            },
-            {
-               logo: 'https://www.developmentaid.org/files/organizationLogos/tokyo-electric-power-services-co-ltd-tepsco-44112.jpg',
-               webSite: 'http://www.tepsco.co.jp/english/index.html'
-            },
-            {
-               logo: 'https://turonbank.uz/bitrix/templates/main/img/header__logo.svg',
-               webSite: 'https://turonbank.uz/'
-            },
-            {
-               logo: 'https://static.tildacdn.com/tild3661-3238-4837-b961-393964323931/photo_2021-02-18_11-.png',
-               webSite: 'https://zizi-uz.all.biz/'
-            }
-         ]
-      },
-      feedback: {
-         h2: 'Биз хакимизда мижозларнинг фикрлари',
-         list: [
-            {
-               author: 'Санжар Норматов',
-               companyName: 'Mitsubishi Corporation',
-               text: '«ABM INNOVATSIYA INVEST», - ҳар доим энг қисқа вақт ичида бажарилган ишларнинг ишончли ва сифатли натижасидир. Мен агентлик билан 5 йилдан кўпроқ вақт давомида ишлаб келаяпман. Тавсия этаман.'
-            },
-            {
-               author: 'Бобур Мухаммедов',
-               companyName: 'TEPSCO',
-               text: 'Босиқ, мулойим ва тезкор ходимлар! Мен бир неча йилдан буён уларнинг хизматларидан фойдаланаман ва ҳар сафар уларнинг мижозларга муносабатидан мамнун бўламан! Бундай иш учун уларга катта раҳмат!'
-            },
-            {
-               author: 'Азизмирза Умедов',
-               companyName: 'JELEGUM GOLD SERVICE',
-               text: 'Бу биринчи навбатда мижозларга йўналтирилган ва мижознинг сўровини қондириш ва уни профессионал даражада бажариш учун ўз фаолиятига устувор аҳамият берадиган Тошкентдаги кам сонли агентликлардан биридир! Мен ходимларнинг ишидан ич ичимдан ҳайратландим ва натижадан мамнунман'
-            }
-         ]
-      },
-      faq: {
-         h2: 'Кўп бериладиган саволлар',
-         list: [
-            {
-               question: 'Қайси тилларда таржима ишларини олиб борасизлар?',
-               answer: 'Ўзбек тили, Рус тили, Инглиз тили, Немис тили, Француз тили, Испан тили, Тожик тили, Хитой тили, Япон тили'
-            }
-         ]
-      },
-      contactUs: {
-         h3: 'Бизнинг менежерларимиз сиз билан боғланишини хоҳласангиз ҳозирни ўзида пастдаги шаклни тўлдиринг',
-         name: 'Исмингиз',
-         phone: 'Телефон рақамингиз',
-         send: 'Жўнатиш'
-      },
-      form: {
-         failed: 'Телефон рақам ёки исм нотўғри кириртилди. Илтимос текшириб қайтадан киритинг.',
-         success: 'Мурожаатингиз учун раҳмат! Сиз билан тез орада боғланамиз.'
-      },
-      footer: {
-         footerDescription: '«ABM INNOVATSIYA INVEST», МЧЖ 2015- йилдан буён таржима хизматлари бозорида фаолият юритиб келмоқда. Биз таклиф этаётган хизматларни юқори малакали таржимонлар олиб боради',
-         cols: [
-            {
-               h2: 'Фойдали линклар',
-               links: ['Сервислар', 'Нега айнан биз?', 'Ҳамкорлар']
-            },
-            {
-               h2: 'Алоқа'
-            },
-            {
-               h2: 'Бизнинг жойлашув'
-            }
-         ]
-      }
-   },
-   {
       menu: ['Biz haqimizda', 'Servislar', 'Nega aynan biz?', 'Hamkorlar', 'Aloqa'],
       intro: {
          h1: 'Biz sizning foydangiz uchun tarjima qilamiz.',
@@ -149,7 +8,7 @@ const data = [
       },
       about: {
          h2: 'Biz haqimizda',
-         p: '«ABM INNOVATSIYA INVEST», MChJ 2015- yildan buyon tarjima xizmatlari bozorida faoliyat yuritib kelmoqda. Biz taklif etayotgan xizmatlar qatoriga yuqori malakali yozma, og\'zaki va ketma-ket va sinxron tarjima, tarjima qilingan hujjatlarni notarial tasdiqlash, ularni qonuniylashtirish / apostilizatsiya (Adliya vazirligi, Tashqi ishlar vazirligi, elchixonalarida) tasdiqlash kiradi.'
+         p: '«ABM INNOVATSIYA INVEST», MChJ 2015- yildan buyon tarjima xizmatlari bozorida faoliyat yuritib kelmoqda. Biz taklif etayotgan xizmatlar qatoriga yuqori malakali yozma, og\'zaki va ketma-ket va sinxron tarjima, tarjima qilingan hujjatlarni notarial tasdiqlash, ularni legalizatsiya / apostil (Adliya vazirligi, Tashqi ishlar vazirligi, elchixonalarida) tasdiqlash kiradi.'
       },
       services: {
          h2: 'Servislar',
@@ -251,7 +110,7 @@ const data = [
          list: [
             {
                question: 'Qaysi tillarda tarjima ishlarini olib borasizlar?',
-               answer: 'O`zbek tili, Rus tili, Ingliz tili, Nemis tili, Fransuz tili, Ispan tili, Tojik tili, Xitoy tili, Yapon tili'
+               answer: 'O`zbek tili, Rus tili, Ingliz tili, Nemis tili, Fransuz tili, Ispan tili, Xitoy tili, Arab tili, Turk tili'
             }
          ]
       },
@@ -392,7 +251,7 @@ const data = [
          list: [
             {
                question: 'На каких языках Вы выполняете работу по переводу.',
-               answer: 'Узбекский язык, Русский язык, Английский язык, Немецкий язык, Французский язык, Испанский язык, Таджикский язык, Китайский язык, Японский язык'
+               answer: 'Узбекский язык, Русский язык, Английский язык, Немецкий язык, Французский язык, Испанский язык, Китайский язык, Aрабский язык, Tурецкий язык'
             }
          ]
       },
@@ -515,7 +374,7 @@ const data = [
          list: [
             {
                question: 'What languages do you translate?',
-               answer: 'Uzbek language, Russian language, English language, German language, French language, Spanish language, Tajik language, Chinese language, Japanese language'
+               answer: 'Uzbek language, Russian language, English language, German language, French language, Spanish language, Chinese language, Arabic language, Turkish language'
             }
          ]
       },
